@@ -1,25 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Header } from "./components/Header";
+import { Profile } from "./components/Profile";
+import { Navbar } from "./components/Navbar";
 
 function App() {
-  return (
-    <div className='app-wprapper'>
-      <header className='header'>
-        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1" />
-      </header>
-      <nav className='nav'>
-        <div>
-          Profile
-        </div>
-        <div>
-          Mesege
-        </div>
-      </nav>
-      <div className='content'>
-        Main content
-      </div>
-    </div>
-  );
+   return (
+      <div className="app-wprapper">
+         <Header/>
+         <Navbar/>
+         <Profile/>
+      </div >
+   );
 }
 
-export default App
+export default App;
