@@ -1,0 +1,9 @@
+.content {
+   grid-area: c;
+   background-color: rgba(71, 220, 220, 0.234);
+
+}
+
+.posts{
+   background-color: rgba(26, 9, 178, 0.13);
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import './Header.css'
+import classes from './Header.module.css'
 export const Header = () => {
    return(
-      <header className="header">
+      <header className={classes.header}>
             <span>ᗩⓂᗩ</span> 
          </header>
    )
