@@ -1,0 +1,8 @@
+.header {
+   grid-area: h;
+   background-color: rgba(118, 173, 229, 0.511);
+}
+
+.header span {
+   font-size: 44px;
+}
