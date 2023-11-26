@@ -5,8 +5,8 @@ type PostTypeProps = {
    message: string
 }
 
-export const Post:FC  <PostTypeProps> = (message)=> {
+export const Post = (props: PostTypeProps ) => {
 	return (
-			<div className={classes.item}>{message}</div>
+			<div className={classes.item}>{props.message}</div>
 	);
 };

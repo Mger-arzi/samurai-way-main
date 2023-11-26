@@ -1,17 +1,17 @@
-import React from "react";
-import "./App.css";
-import { Header } from "./components/header/Header";
-import { Profile } from "./components/profile/Profile";
-import { Navbar } from "./components/navbar/Navbar";
+import React from 'react';
+import "./App.css"
+import { Header } from './components/header/Header';
+import { Navbar } from './components/navbar/Navbar';
+import { Profile } from './components/profile/Profile';
 
-function App() {
+const App = () => {
    return (
-      <div className="app-wprapper">
+      <div className='app-wprapper' >
          <Header/>
          <Navbar/>
          <Profile/>
-      </div >
+      </div>
    );
-}
+};
 
 export default App;
