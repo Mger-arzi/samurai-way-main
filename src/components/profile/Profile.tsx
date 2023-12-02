@@ -4,7 +4,7 @@ import { MyPosts } from './MyPosts/MyPosts';
 export const Profile = () => {
     return (
         <div>
-            <div className={classes.content}>
+            <div >
                 <div>
                     <img style={{ width: "790px" }} src="https://www.bgoperator.ru/pr_img/1000787/20160930/39057527/marvel-img-worlds-of-adventure-dubai.jpg" />
                 </div>
