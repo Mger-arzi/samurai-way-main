@@ -6,8 +6,8 @@ export const MyPosts = () => {
 		<div className={classes.posts}>
 			My posts
 			<div>new post</div>
-			<Post message="Hello" />
-			<Post message="By by" />
+			<Post message="Hello" lekesCount={12} />
+			<Post message="By by"  lekesCount={0}/>
 		</div>
 	);
 };

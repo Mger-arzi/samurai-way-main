@@ -5,13 +5,13 @@ import { Navbar } from './components/navbar/Navbar';
 import { Profile } from './components/profile/Profile';
 
 const App = () => {
-   return (
-      <div className='app-wprapper' >
-         <Header/>
-         <Navbar/>
-         <Profile/>
-      </div>
-   );
+    return (
+        <div className='app-wprapper' >
+            <Header />
+            <Navbar />
+            <Profile />
+        </div>
+    );
 };
 
 export default App;
