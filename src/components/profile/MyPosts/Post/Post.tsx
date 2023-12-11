@@ -8,7 +8,7 @@ type PostTypeProps = {
 
 export const Post = (props: PostTypeProps ) => {
 	return (
-			<div className={classes.item}>{props.message}
+			<div className={classes.post}>{props.message}
                 <div>like {props.lekesCount}</div>
             </div>
 	);
