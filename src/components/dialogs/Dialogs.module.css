@@ -1,15 +1,22 @@
 .dialogs {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
 }
 
-.dialog {
-    color: rgb(252, 164, 48);
+.dialog a{
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+
+
+}
+.dialog a.active {
+    color: goldenrod;
 }
 .dialogsItems {
-    
+    padding: 10px;
 }
 .messeges {
-
+    padding: 10px;
 }
 
 .messege {
