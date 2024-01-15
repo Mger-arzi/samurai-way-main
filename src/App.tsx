@@ -5,12 +5,12 @@ import { Navbar } from './components/navbar/Navbar';
 import { Profile } from './components/profile/Profile';
 import { Dialogs } from './components/dialogs/Dialogs';
 import {  HashRouter, Route } from 'react-router-dom';
-import { DialogProps } from './components/dialogs/dialogsItem/DialogeItem';
+import { DialogItemType} from './components/dialogs/dialogsItem/DialogeItem';
 import { MessageProps } from './components/dialogs/message/Message';
 import { PostType } from './components/profile/MyPosts/Post/Post';
 
 type AppTypeProps = {
-    DialogsData: DialogProps[]
+    DialogsData: DialogItemType[]
     MessagesData: MessageProps[]
     Posts:PostType[]
 }

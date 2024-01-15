@@ -8,8 +8,6 @@ type ProfileDataType = {
     Posts: PostType[]
 
 }
-
-
 export const Profile: React.FC <ProfileDataType> = ({Posts}) => {
     return (
             <div className={classes.profile}>

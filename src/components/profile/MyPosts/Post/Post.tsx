@@ -7,7 +7,7 @@ export type PostType = {
     message:string
     likesCount:number
 } 
-export const Post : React.FC <PostType> = ({id, message,likesCount} ) => {
+export const Post : React.FC <PostType> = ({ message,likesCount} ) => {
 	return (
 			<div className={classes.post}>{message}
                 <div>like {likesCount}</div>

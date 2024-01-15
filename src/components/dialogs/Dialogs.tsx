@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import classes from "./Dialogs.module.css";
 import { Message, MessageProps } from "./message/Message";
-import { DialogItem, DialogProps } from "./dialogsItem/DialogeItem";
+import {  DialogItem, DialogItemType} from "./dialogsItem/DialogeItem";
 
 type DialogsDataType = {
-    DialogsData:DialogProps[]
+    DialogsData: DialogItemType[]
     MessagesData: MessageProps[]
 }
 
