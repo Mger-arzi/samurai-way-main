@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import classes from "./../Dialogs.module.css";
 import { NavLink } from "react-router-dom";
 
-type DialogProps = {
+export type DialogProps = {
     name: string;
     id: string;
 };

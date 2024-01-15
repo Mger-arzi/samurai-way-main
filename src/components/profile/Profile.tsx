@@ -2,23 +2,19 @@ import React from 'react';
 import classes from './Profile.module.css'
 import { MyPosts } from './MyPosts/MyPosts';
 import { ProfileInfo } from './profileInfo/ProfileInfo';
+import { PostType } from './MyPosts/Post/Post';
 
-export let Posts = [
-    { id: '1', message: 'Hello', likesCount: 12 },
-    { id: '2', message: 'By by', likesCount: 13 },
-]
-export type PostsType = {
-    id:string
-    message:string
-    likesCount:number
+type ProfileDataType = {
+    Posts: PostType[]
+
 }
 
 
-export const Profile = () => {
+export const Profile: React.FC <ProfileDataType> = ({Posts}) => {
     return (
             <div className={classes.profile}>
                 <ProfileInfo avatar='avatar'/>
-                <MyPosts posts= {Posts}/>
+                <MyPosts Posts= {Posts}/>
             </div>
 
     );

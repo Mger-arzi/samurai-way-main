@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import classes from "./../Dialogs.module.css";
 
 
-type MessageProps = {
+export type MessageProps = {
     id: string;
     message: string;
 };
