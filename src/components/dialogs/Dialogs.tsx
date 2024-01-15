@@ -1,33 +1,14 @@
 import React, { FC } from "react";
 import classes from "./Dialogs.module.css";
-import { NavLink } from "react-router-dom";
-import { message } from "antd";
+import { Message } from "./message/Message";
+import { DialogItem } from "./dialogsItem/DialogeItem";
 
-type DialogProps = {
-    name: string;
-    id: string;
-};
-type MessageProps = {
-    id: string;
-    message: string;
-};
-
-const Dialog: React.FC<DialogProps> = ({ name, id }) => {
-    let path = "/dialogs/" + id;
-    return (
-        <div className={classes.dialog}>
-            <NavLink to={path} activeClassName={classes.active}>
-                {" "}
-                {name}{" "}
-            </NavLink>
-        </div>
-    );
-};
-const Message: React.FC<MessageProps> = ({ message }) => {
-    return <div className={classes.messege}> {message}</div>;
-};
 
 export const Dialogs = () => {
+    type DialogsDataType = {
+        id:string
+        name:string
+    }
     let DialogsData = [
         { id: "1", name: "Mger" },
         { id: "2", name: "David" },
@@ -36,6 +17,10 @@ export const Dialogs = () => {
         { id: "5", name: "Sasha" },
         { id: "6", name: "Davit" },
     ];
+    type MessagesDataType = { 
+        id: string;
+        message: string
+    }
     let MessagesData = [
         { id: "1", message: "Lorem, ipsum dolor.meM" },
         { id: "2", message: "Lorem, ipsum dolor sit amet consectetur adipisicing." },
@@ -45,7 +30,7 @@ export const Dialogs = () => {
         { id: "6", message: "Davit" },
     ];
 
-    let dialogsElements = DialogsData.map(el => <Dialog id={el.id} name={el.name} />);
+    let dialogsElements = DialogsData.map(el => <DialogItem id={el.id} name={el.name} />);
     let messagesElement = MessagesData.map(el => <Message id={el.id} message={el.message} />);
     return (
         <div className={classes.dialogs}>

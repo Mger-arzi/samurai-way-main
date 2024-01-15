@@ -4,11 +4,11 @@ import { Header } from './components/header/Header';
 import { Navbar } from './components/navbar/Navbar';
 import { Profile } from './components/profile/Profile';
 import { Dialogs } from './components/dialogs/Dialogs';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route } from 'react-router-dom';
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className='app-wprapper' >
                 <Header />
                 <Navbar />
@@ -17,7 +17,7 @@ const App = () => {
                     <Route path= '/profile' component={Profile} />
                 </div>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
