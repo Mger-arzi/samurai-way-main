@@ -5,24 +5,22 @@ import { Navbar } from './components/navbar/Navbar';
 import { Profile } from './components/profile/Profile';
 import { Dialogs } from './components/dialogs/Dialogs';
 import {  HashRouter, Route } from 'react-router-dom';
-import { DialogItemType} from './components/dialogs/dialogsItem/DialogeItem';
-import { MessageProps } from './components/dialogs/message/Message';
-import { PostType } from './components/profile/MyPosts/Post/Post';
+import {  state } from './redux/state';
 
-type AppTypeProps = {
-    DialogsData: DialogItemType[]
-    MessagesData: MessageProps[]
-    Posts:PostType[]
-}
-const App : React.FC<AppTypeProps> = ({DialogsData, MessagesData, Posts})=> {
+const DialogsData = state.DialogsPage.DialogsData
+const MessagesData = state.DialogsPage.MessagesData
+
+const ProfilePage = state.ProfilePage.Posts
+
+const App : React.FC = ({})=> {
     return (
         <HashRouter>
             <div className='app-wprapper' >
                 <Header />
                 <Navbar />
                 <div className='app-wrapper-content'>
-                    <Route path='/dialogs' render={()=> <Dialogs  DialogsData = {DialogsData} MessagesData = {MessagesData}/>} />
-                    <Route path= '/profile' render ={()=> <Profile Posts = {Posts}/>} />
+                    <Route path='/dialogs' render={()=> <Dialogs MessagesData = {MessagesData}  DialogsData = {DialogsData}/>} />
+                    <Route path= '/profile' render ={()=> <Profile Posts = {ProfilePage}/>} />
                 </div >
             </div>
         </HashRouter>

@@ -2,13 +2,10 @@ import React from 'react';
 import classes from './Profile.module.css'
 import { MyPosts } from './MyPosts/MyPosts';
 import { ProfileInfo } from './profileInfo/ProfileInfo';
-import { PostType } from './MyPosts/Post/Post';
+import { ProfilePageType, RootStateType } from '../../redux/state';
 
-type ProfileDataType = {
-    Posts: PostType[]
 
-}
-export const Profile: React.FC <ProfileDataType> = ({Posts}) => {
+export const Profile: React.FC <ProfilePageType> = ({Posts}) => {
     return (
             <div className={classes.profile}>
                 <ProfileInfo avatar='avatar'/>
