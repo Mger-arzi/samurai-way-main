@@ -9,7 +9,7 @@ import { DialogItemType} from './components/dialogs/dialogsItem/DialogeItem';
 import { MessageProps } from './components/dialogs/message/Message';
 import { PostType } from './components/profile/MyPosts/Post/Post';
 
-type AppTypeProps = {
+type  AppTypeProps = {
     DialogsData: DialogItemType[]
     MessagesData: MessageProps[]
     Posts:PostType[]

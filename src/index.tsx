@@ -24,7 +24,7 @@ import { state } from './redux/state';
 //     { id: '2', message: 'By by', likesCount: 13 },
 // ]
 
-
+sdfdsf
 ReactDOM.render(
     <App  DialogsData ={state.DialogsData} MessagesData = {state.MessagesData} Posts={state.Posts} />,
     document.getElementById('root')
